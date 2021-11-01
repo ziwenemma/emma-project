@@ -1,19 +1,26 @@
-import Head from 'next/head'
-import Header from '../components/Header'
+import Head from 'next/head';
+import Header from '../components/Header';
 import MainPage from '../components/MainPage';
-import PopularList from '../components/PopularList';
+import Movies from '../components/Movies';
+import IntroPart from '../components/IntroPart';
+import Footer from '../components/Footer';
+
 
 export default function Home() {
   return (
-    <div>
+    <div> 
+      <div className="w-full h-full bg-no-repeat bg-cover bg-left bg-fixed bg-back-img bg-opacity-10">
       <Head>
         <title>EmmaProject</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header/>
-      <MainPage/>
+      <Header/>  
+      <IntroPart/>
 
-      <PopularList/>
+      <Movies/>
+      <MainPage/>
+      <Footer/>
     </div>
+  </div>
   );
 }

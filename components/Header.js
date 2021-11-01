@@ -1,25 +1,33 @@
+import {
+  CollectionIcon,
+  HomeIcon,
+  PhotographIcon,
+  UserIcon
+} from "@heroicons/react/outline";
 import Image from "next/image";
 import HeaderItem from "./HeaderItem";
-import {
-CollectionIcon,
-HomeIcon,
-PhotographIcon,
-UserIcon,}from "@heroicons/react/outline";
 
 function Header() {
   return (
-    <header className='flex flex-col sm:flex-row m-6 justify-between items-center'>
-      <div className="flex flex-grow justify-evenly max-w-2xl">
+    <header className='flex flex-col sm:flex-row m-0 justify-between items-center'>  
+    <Image
+      className="object-fill justify-start" 
+      src="/logo.png" 
+      width={100} height={80}/>
+
+      <div className="flex flex-grow  justify-start max-w-3xl  pt-10">
         <HeaderItem title="HOME" Icon={HomeIcon}/>
         <HeaderItem title="
-        PHOTOS" Icon={PhotographIcon}/>
-        <HeaderItem title="VEDIO" Icon={CollectionIcon}/>
+        MOVIES" Icon={PhotographIcon}/>
+        <HeaderItem title="NEWS" Icon={CollectionIcon}/>
         <HeaderItem title="ACCOUNT" Icon={UserIcon}/>
       </div>
-      <Image
-      className="object-contain" 
-      src="/logo.png" 
-      width={200} height={100}/>
+
+      <div className="flex flex-grow  justify-end pt-10">
+        <HeaderItem title="Instagram" Icon={CollectionIcon}/>
+      <HeaderItem title="MOVIES" Icon={PhotographIcon}/>
+      </div>
+    
     </header>
   )
 }
