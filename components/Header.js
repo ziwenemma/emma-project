@@ -5,6 +5,7 @@ import {
   UserIcon
 } from "@heroicons/react/outline";
 import Image from "next/image";
+import Link from "next/link";
 import HeaderItem from "./HeaderItem";
 
 function Header() {
@@ -17,8 +18,9 @@ function Header() {
 
       <div className="flex flex-grow  justify-start max-w-3xl  pt-10">
         <HeaderItem title="HOME" Icon={HomeIcon}/>
-        <HeaderItem title="
-        MOVIES" Icon={PhotographIcon}/>
+        <Link href="/posts/moviepost"><a><HeaderItem title="
+        MOVIES" Icon={PhotographIcon}
+        /></a></Link>
         <HeaderItem title="NEWS" Icon={CollectionIcon}/>
         <HeaderItem title="ACCOUNT" Icon={UserIcon}/>
       </div>
