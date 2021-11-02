@@ -1,8 +1,7 @@
 function Footer() {
   return (
-    <div>
-    <footer className="sm:py-5 bg-black bg-opacity-90">
-  <div className="container mx-auto px-3">
+    <footer className="bg-black bg-opacity-90 b-0">
+  <div className="container mx-auto px-3 ">
     <div className="sm:flex sm:flex-wrap  md:py-4 justify-evenly">
       <div className="px-4">
         <h5 className="text-2xl font-bold text-white mb-6">Follow US</h5>
@@ -49,7 +48,6 @@ function Footer() {
     </div>
   </div>
 </footer>
-    </div>
   )
 }
 
