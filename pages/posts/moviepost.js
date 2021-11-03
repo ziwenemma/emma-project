@@ -15,11 +15,11 @@ export function MoviePage({playlistLists}){
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Header/>
+    <div>
       <h1 className='text-5xl text-black text-center p-10'>Movies</h1>
-       
        <div className='p-10 grid grid-cols-2 gap-3 mx-auto'>
          {playlistLists.map(playlistLists =>(
-           <div className='rounded-lg overflow-hidden shadow-lg justify-center items-center bg-white bg-opacity-90 p-10'>
+           <div className='rounded-lg overflow-hidden shadow-lg justify-center items-center bg-white bg-opacity-90 p-10' key={playlistLists.id}>
           <div className='w-full'>
              <img src={playlistLists.image} alt=''width='300' height='200'/></div>
           <div className='w-full p-4 justify-start flex flex-col'>
@@ -34,7 +34,7 @@ export function MoviePage({playlistLists}){
            </div>
          ))}
     </div>
-
+</div>
   <Footer/>
   </div>
 </div>
