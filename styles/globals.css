@@ -4,6 +4,6 @@
 
 @layer base {
   body{
-    @apply  bg-back-img text-white bg-opacity-10;
+    @apply  bg-back-img  bg-opacity-10;
   }
 }
