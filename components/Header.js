@@ -23,7 +23,7 @@ function Header() {
         <Link href="/posts/moviepost"><a><HeaderItem title="
         MOVIES" Icon={PhotographIcon}
         /></a></Link>
-        <Link href="/posts/listDb"><a><HeaderItem title="NEWS" Icon={CollectionIcon}/></a></Link>
+        <Link href="/newsPage"><a><HeaderItem title="NEWS" Icon={CollectionIcon}/></a></Link>
         <HeaderItem title="ACCOUNT" Icon={UserIcon}/>
       </div>
 

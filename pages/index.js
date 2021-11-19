@@ -16,7 +16,6 @@ export default function Home() {
       </Head>
       <Header/>  
       <IntroPart/>
-
       <Movies/>
       <MainPage/>
       <Footer/>

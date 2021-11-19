@@ -462,6 +462,13 @@
   "resolved" "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   "version" "0.0.29"
 
+"@types/mongodb@^4.0.7":
+  "integrity" "sha512-lPUYPpzA43baXqnd36cZ9xxorprybxXDzteVKCPAdp14ppHtFJHnXYvNpmBvtMUTb5fKXVv6sVbzo1LHkWhJlw=="
+  "resolved" "https://registry.npmjs.org/@types/mongodb/-/mongodb-4.0.7.tgz"
+  "version" "4.0.7"
+  dependencies:
+    "mongodb" "*"
+
 "@types/node@*":
   "integrity" "sha512-ua7PgUoeQFjmWPcoo9khiPum3Pd60k4/2ZGXt18sm2Slk0W0xZTqt5Y0Ny1NyBiN1EVQ/+FaF9NcY4Qe6rwk5w=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-16.11.6.tgz"
@@ -4263,7 +4270,7 @@
     "@types/whatwg-url" "^8.2.1"
     "whatwg-url" "^9.1.0"
 
-"mongodb@^3.5.9":
+"mongodb@*", "mongodb@^3.5.9":
   "integrity" "sha512-Psm+g3/wHXhjBEktkxXsFMZvd3nemI0r3IPsE0bU+4//PnvNWKkzhZcEsbPcYiWqe8XqXJJEg4Tgtr7Raw67Yw=="
   "resolved" "https://registry.npmjs.org/mongodb/-/mongodb-3.7.3.tgz"
   "version" "3.7.3"
