@@ -24,9 +24,8 @@ export default function NewsPage({ properties }) {
     <div className='m-4 p-10 py-6 lg:py-2'>
      <div className='grid grid-cols-1 gap-y-8 relative pt-10'>
        {properties&&properties.map(property=>(
-        <div className="md:flex shadow-lg mx-6 md:mx-auto my-40 max-w-lg md:max-w-2xl h-64">
-
-        <div className='grid grid-cols-2 relative pt-10' key={property.id}>
+        <div className="md:flex shadow-lg mx-6 md:mx-auto my-40 max-w-lg md:max-w-2xl h-64" key={property.id}>
+        <div className='grid grid-cols-2 relative pt-10' >
         <img className="flex w-full md:w-1/3  object-contain rounded-lg rounded-r-none pb-5/6" src={property.img} alt=""/>
         <div className="w-full md:w-2/3 px-4 py-4 bg-white rounded-lg">
            <div className="flex items-center m-2">
