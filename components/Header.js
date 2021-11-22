@@ -2,6 +2,7 @@ import {
   CollectionIcon,
   HomeIcon,
   PhotographIcon,
+  FilmIcon,
   UserIcon
 } from "@heroicons/react/outline";
 import Image from "next/image";
@@ -24,12 +25,10 @@ function Header() {
         MOVIES" Icon={PhotographIcon}
         /></a></Link>
         <Link href="/newsPage"><a><HeaderItem title="NEWS" Icon={CollectionIcon}/></a></Link>
-        <HeaderItem title="ACCOUNT" Icon={UserIcon}/>
       </div>
 
       <div className="flex flex-grow text-white justify-end pt-10">
-        <HeaderItem title="Instagram" Icon={CollectionIcon}/>
-      <HeaderItem title="MOVIES" Icon={PhotographIcon}/>
+      <HeaderItem title="Vedio" Icon={FilmIcon}/>
       </div>
     
     </header>
