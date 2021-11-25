@@ -1,9 +1,6 @@
 import {
-  CollectionIcon,
-  HomeIcon,
-  PhotographIcon,
-  FilmIcon,
-  UserIcon
+  CollectionIcon, FilmIcon, HomeIcon,
+  PhotographIcon
 } from "@heroicons/react/outline";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,7 +25,7 @@ function Header() {
       </div>
 
       <div className="flex flex-grow text-white justify-end pt-10">
-      <HeaderItem title="Vedio" Icon={FilmIcon}/>
+      <Link href="/newsPage"><a><HeaderItem title="Vedio" Icon={FilmIcon}/></a></Link>
       </div>
     
     </header>
