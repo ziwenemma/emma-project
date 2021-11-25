@@ -1,4 +1,8 @@
-import { AiOutlineHome, AiOutlineInstagram } from "react-icons/ai";
+import {
+  AiOutlineHome,
+  AiOutlineInstagram,
+  AiOutlineYoutube,
+} from "react-icons/ai";
 import { BsFilm, BsNewspaper } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +10,7 @@ import HeaderItem from "./HeaderItem";
 
 function Header() {
   return (
-    <header className="flex flex-col sm:flex-row m-0 justify-between items-center">
+    <header className="flex flex-col sm:flex-row m-0 justify-between items-center bg-black">
       <Image
         className="object-fill justify-start"
         src="/logo.png"
@@ -26,6 +30,7 @@ function Header() {
               title="
         MOVIES"
               Icon={BsFilm}
+              size="10x"
             />
           </a>
         </Link>
@@ -37,9 +42,14 @@ function Header() {
       </div>
 
       <div className="flex flex-grow text-white justify-end pt-10">
-        <Link href="/newsPage">
+        <Link href="https://www.youtube.com/">
           <a>
-            <HeaderItem title="Vedio" Icon={AiOutlineInstagram} />
+            <HeaderItem title="Youtube" Icon={AiOutlineYoutube} />
+          </a>
+        </Link>
+        <Link href="https://www.instagram.com/">
+          <a>
+            <HeaderItem title="Instagram" Icon={AiOutlineInstagram} />
           </a>
         </Link>
       </div>
